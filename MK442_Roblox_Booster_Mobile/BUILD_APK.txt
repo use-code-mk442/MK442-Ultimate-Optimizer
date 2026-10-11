@@ -1,0 +1,10 @@
+طريقة إخراج APK:
+
+الخيار الأسهل عبر GitHub Actions:
+1) فك ضغط المشروع.
+2) أنشئ مستودعاً جديداً على GitHub وارفع محتويات هذا المجلد إليه، مع مجلد .github.
+3) افتح Actions ثم Build MK442 Android APK ثم Run workflow.
+4) بعد نجاح البناء، نزّل Artifact باسم MK442-Roblox-Booster-APK.
+5) فك ضغط الـ Artifact وثبّت app-debug.apk على الهاتف.
+
+لا يوجد APK مبني مسبقاً داخل هذا الأرشيف؛ بيئة إنشاء الملفات هنا لا تحتوي Android SDK/Gradle ولا تستطيع تنزيل متطلبات البناء. ملف GitHub Actions المرفق يجهّز المتطلبات ويبني APK.
